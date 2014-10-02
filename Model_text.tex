@@ -1,0 +1,84 @@
+\documentclass[12pt,a4paper,oneside,titlepage,final]{article}
+
+\usepackage[english,french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex]{graphicx} 
+\usepackage[absolute,overlay]{textpos}
+\usepackage[usenames]{color}
+\usepackage[french]{varioref}
+\usepackage[right]{eurosym}
+\usepackage{enumerate}
+\usepackage[pdftex]{lscape}
+\usepackage{multirow} % Fusion de lignes
+\usepackage{listings}
+\usepackage{lipsum}
+\author{BOTET Corentin et GUEDIN Dimitri}
+
+\newcommand{\MONTITRE}{TITRE}
+\newcommand{\MONSOUSTITRE}{SOUS-TITRE}
+\newcommand{\MOI}{Prénom \bsc{NOM}}
+%\newcommand{\SIOlong}{Services Informatiques aux Organisations}
+
+\usepackage[%
+pdftex,%
+bookmarks=false,%
+bookmarksopen=false,%
+bookmarksnumbered=false,%
+pdfborder=0,%
+pdfmenubar=true,%
+pdftoolbar=true,%
+pdfpagelabels=true,%
+pdftitle={\MONTITRE},%
+pdfpagelayout={OneColumn},%
+plainpages=true,%
+pdfstartview=FitH%
+]{hyperref}
+
+\title{
+\begin{tabular}{p{3.5cm} r}
+& {\Huge {\bf \MONTITRE}}\\
+& {\huge \MONSOUSTITRE}\\
+& {\huge \MOI}\\
+%& version du \today{}
+\end{tabular}
+}
+
+\usepackage{fancyhdr}
+\addtolength{\headheight}{\baselineskip}
+\setlength{\unitlength}{1cm}
+\newcommand{\HEADER}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \newligne nouvelle ligne
+% \newpage nouvelle page
+% \bigbreak saut de ligne
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\part{Partie 1}
+
+\section{Ma super section}
+
+\lipsum[1-2]
+
+\subsection{Ma super sous section}
+
+\lipsum[1-2]
+
+\subsubsection{Ma super sous sous section}
+
+\lipsum[1-2]
+
+%ainsi de suite connard
+
+
+\vspace*{\fill} Ce document a \'et\'e r\'edig\'e et mis en forme en
+\href{http://www.latex-project.org/}{\LaTeXe}. \vspace*{\fill}
+
+\end{document}
